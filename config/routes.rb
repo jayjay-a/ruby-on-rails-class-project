@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   #setting homepage:
   #root to: "thing#otherthing"
   #         "callToController#callToMethod"
+  root to: "pages#home"
+
 end
