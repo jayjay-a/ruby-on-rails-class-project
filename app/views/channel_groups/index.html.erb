@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Channel Groups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Channel</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @channel_groups.each do |channel_group| %>
+      <tr>
+        <td><%= channel_group.group_id %></td>
+        <td><%= channel_group.channel_id %></td>
+        <td><%= channel_group.date %></td>
+        <td><%= link_to 'Show', channel_group %></td>
+        <td><%= link_to 'Edit', edit_channel_group_path(channel_group) %></td>
+        <td><%= link_to 'Destroy', channel_group, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Channel Group', new_channel_group_path %>

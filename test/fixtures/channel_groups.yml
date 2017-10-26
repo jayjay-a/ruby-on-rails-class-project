@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  group_id: 1
+  channel_id: 1
+  date: 2017-10-25 22:06:07
+
+two:
+  group_id: 1
+  channel_id: 1
+  date: 2017-10-25 22:06:07
