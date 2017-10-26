@@ -1,2 +1,0 @@
-class ChannelGroup < ApplicationRecord
-end
