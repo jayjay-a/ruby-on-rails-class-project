@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Post Histories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Action</th>
+      <th>Date</th>
+      <th>User</th>
+      <th>Post</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @post_histories.each do |post_history| %>
+      <tr>
+        <td><%= post_history.action %></td>
+        <td><%= post_history.date %></td>
+        <td><%= post_history.user_id %></td>
+        <td><%= post_history.post_id %></td>
+        <td><%= link_to 'Show', post_history %></td>
+        <td><%= link_to 'Edit', edit_post_history_path(post_history) %></td>
+        <td><%= link_to 'Destroy', post_history, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Post History', new_post_history_path %>

@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171026030829) do
+ActiveRecord::Schema.define(version: 20171026035501) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "boards", force: :cascade do |t|
+    t.string "name"
+    t.datetime "date"
+    t.integer "channel_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "channel_groups", force: :cascade do |t|
     t.integer "group_id"
@@ -32,6 +40,23 @@ ActiveRecord::Schema.define(version: 20171026030829) do
 
   create_table "groups", force: :cascade do |t|
     t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "post_histories", force: :cascade do |t|
+    t.string "action"
+    t.datetime "date"
+    t.integer "user_id"
+    t.integer "post_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.string "name"
+    t.datetime "date"
+    t.integer "board_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

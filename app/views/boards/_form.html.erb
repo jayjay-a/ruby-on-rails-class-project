@@ -1,0 +1,32 @@
+<%= form_with(model: board, local: true) do |form| %>
+  <% if board.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(board.errors.count, "error") %> prohibited this board from being saved:</h2>
+
+      <ul>
+      <% board.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :board_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.datetime_select :date, id: :board_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :channel_id %>
+    <%= form.number_field :channel_id, id: :board_channel_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,37 @@
+<%= form_with(model: post_history, local: true) do |form| %>
+  <% if post_history.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(post_history.errors.count, "error") %> prohibited this post_history from being saved:</h2>
+
+      <ul>
+      <% post_history.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :action %>
+    <%= form.text_field :action, id: :post_history_action %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.datetime_select :date, id: :post_history_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.number_field :user_id, id: :post_history_user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :post_id %>
+    <%= form.number_field :post_id, id: :post_history_post_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

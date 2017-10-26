@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :post_histories
+  resources :posts
+  resources :boards
   resources :user_roles
   resources :user_statuses
   resources :channel_groups
