@@ -1,4 +1,4 @@
 class ChannelGroup < ApplicationRecord
   belongs_to :channel
-  belongs_to :groups
+  belongs_to :group
 end
