@@ -26,6 +26,11 @@
     <%= form.number_field :board_id, id: :post_board_id %>
   </div>
 
+    <div class="field">
+      <%= form.label :message %>
+      <%= form.text_area :message, id: :post_message, :cols=>"50", :rows => "10"%>
+    </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
