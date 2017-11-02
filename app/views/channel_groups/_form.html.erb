@@ -13,12 +13,12 @@
 
   <div class="field">
     <%= form.label :group_id %>
-    <%= form.number_field :group_id, id: :channel_group_group_id %>
+    <%= form.collection_select :group_id, Group.all, :id, :name %>
   </div>
 
   <div class="field">
     <%= form.label :channel_id %>
-    <%= form.number_field :channel_id, id: :channel_group_channel_id %>
+    <%= form.collection_select :channel_id, Channel.all, :id, :name %>
   </div>
 
   <div class="field">
