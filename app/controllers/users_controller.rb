@@ -5,15 +5,12 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
-    respond_to do |format|
-      format.html
-      format.csv {send_data @users.to_csv(['fname,lname,username,password'])}
-    end
   end
 
+  #import csv
   def import
     User.import(params[:file])
-    redirect_to root_url, notice: 'CSV file successfully imported'
+    redirect_to users_url, notice: 'CSV file successfully imported'
   end
 
   # GET /users/1

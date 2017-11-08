@@ -7,15 +7,7 @@ class User < ApplicationRecord
   has_many :groups, :through => :user_groups
   require 'csv'
 
-  #def self.to_csv(fields=column_names, options={})
-  #CSV.generate(options) do |csv|
-  #  csv << fields
-  #    all.each do |user|
-  #      csv << user.attributes.values_at(*fields)
-  #    end
-  #  end
-  #end
-
+  #import csv
   def self.import(file)
     CSV.foreach(file.path, headers:true) do |row|
       users_hash = row.to_hash
