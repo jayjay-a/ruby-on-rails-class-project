@@ -2,7 +2,6 @@
 
 <h1>Posts</h1>
 
-<%#search bar%>
 <%= form_tag(posts_path, :method => "get", id: "search-form") do %>
     <%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
     <%= submit_tag "Search", :name => nil %>
@@ -36,7 +35,6 @@
 
 <br>
 
-<%#search returns nothing%>
 <% if @posts.blank? %>
     <h4>There are no Posts containing the term <%= params[:search] %>.</h4>
 <% end %>

@@ -2,7 +2,6 @@
 
 <h1>Channels</h1>
 
-<%#search bar%>
 <%= form_tag(channels_path, :method => "get", id: "search-form") do %>
     <%= text_field_tag :search, params[:search], placeholder: "Search Channels" %>
     <%= submit_tag "Search", :name => nil %>
@@ -32,7 +31,6 @@
 
 <br>
 
-<%#search retrn nothing%>
 <% if @channels.blank? %>
     <h4>There are no Channels containing the term <%= params[:search] %>.</h4>
 <% end %>
