@@ -4,8 +4,13 @@ class ChannelsController < ApplicationController
   # GET /channels
   # GET /channels.json
   def index
-    @channels = Channel.all
-  end
+      @channels = Channel.all
+      if params[:search]
+        @channels = Channel.search(params[:search]).order("created_at DESC")
+      else
+        @channels = Channel.all.order("created_at DESC")
+      end
+    end
 
   # GET /channels/1
   # GET /channels/1.json

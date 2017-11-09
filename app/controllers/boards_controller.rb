@@ -5,6 +5,11 @@ class BoardsController < ApplicationController
   # GET /boards.json
   def index
     @boards = Board.all
+    if params[:search]
+      @boards = Board.search(params[:search]).order("created_at DESC")
+    else
+      @boards = Board.all.order("created_at DESC")
+    end
   end
 
   # GET /boards/1
@@ -71,4 +76,5 @@ class BoardsController < ApplicationController
     def board_params
       params.require(:board).permit(:name, :date, :channel_id)
     end
+
 end
