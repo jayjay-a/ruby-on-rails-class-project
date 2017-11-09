@@ -13,13 +13,13 @@
 
   <div class="field">
     <%= form.label :user_id %>
-    <%= form.number_field :user_id, id: :user_group_user_id %>
+    <%= form.collection_select :user_id, User.all, :id, :formatted_name %>
   </div>
 
   <div class="field">
     <%= form.label :group_id %>
-    <%= form.number_field :group_id, id: :user_group_group_id %>
-  </div>
+    <%= form.collection_select :user_id, Group.all, :id, :name %>
+  </div>x
 
   <div class="actions">
     <%= form.submit %>

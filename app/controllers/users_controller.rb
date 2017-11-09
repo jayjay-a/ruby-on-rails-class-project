@@ -7,6 +7,12 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  #import csv
+  def import
+    User.import(params[:file])
+    redirect_to users_url, notice: 'CSV file successfully imported'
+  end
+
   # GET /users/1
   # GET /users/1.json
   def show
