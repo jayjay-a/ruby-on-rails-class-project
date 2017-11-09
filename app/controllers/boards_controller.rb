@@ -5,6 +5,7 @@ class BoardsController < ApplicationController
   # GET /boards.json
   def index
     @boards = Board.all
+    
     if params[:search]
       @boards = Board.search(params[:search]).order("created_at DESC")
     else

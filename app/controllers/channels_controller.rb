@@ -5,6 +5,7 @@ class ChannelsController < ApplicationController
   # GET /channels.json
   def index
       @channels = Channel.all
+
       if params[:search]
         @channels = Channel.search(params[:search]).order("created_at DESC")
       else
