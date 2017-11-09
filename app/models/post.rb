@@ -3,7 +3,6 @@ class Post < ApplicationRecord
   has_many :post_histories
   has_many :users, :through => :post_histories
 
-  #search
   def self.search(search)
     where("name LIKE ? OR message LIKE ?", "%#{search}%", "%#{search}%")
   end
