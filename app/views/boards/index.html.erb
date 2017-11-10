@@ -26,6 +26,7 @@
         <td><%= link_to 'Show', board %></td>
         <td><%= link_to 'Edit', edit_board_path(board) %></td>
         <td><%= link_to 'Destroy', board, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Posts', posts_url(:board_id => board.id)%></td>
       </tr>
     <% end %>
   </tbody>
