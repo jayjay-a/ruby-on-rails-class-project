@@ -7,8 +7,11 @@ class PostsController < ApplicationController
     @posts = Post.all
     if params[:search]
       @posts = Post.search(params[:search]).order("created_at DESC")
+    else if params[:board_id]
+      @posts = Post.where(board_id: params[:board_id]).order("created_at DESC")
     else
-      @posts = Post.all.order("created_at DESC")
+      @posts = Post.order("created_at DESC")
+         end
     end
   end
 

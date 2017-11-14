@@ -7,8 +7,11 @@ class BoardsController < ApplicationController
     @boards = Board.all
     if params[:search]
       @boards = Board.search(params[:search]).order("created_at DESC")
-    else
-      @boards = Board.all.order("created_at DESC")
+    else if params[:channel_id]
+           @boards = Board.where(channel_id: params[:channel_id]).order("created_at DESC")
+         else
+           @boards = Board.order("created_at DESC")
+         end
     end
   end
 
