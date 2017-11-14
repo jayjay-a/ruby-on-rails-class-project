@@ -5,9 +5,12 @@ class User < ApplicationRecord
   has_many :user_roles
   has_many :user_groups
   has_many :groups, :through => :user_groups
-  require 'csv'
+  validates :password,  :presence => :true,
+                        :confirmation => true,
+                        :length => {:within => 6..50}
 
   #import csv
+  require 'csv'
   def self.import(file)
     CSV.foreach(file.path, headers:true) do |row|
       users_hash = row.to_hash
