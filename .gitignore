@@ -20,3 +20,4 @@
 
 #ignore intellij files
 /.idea/*
+.idea/*

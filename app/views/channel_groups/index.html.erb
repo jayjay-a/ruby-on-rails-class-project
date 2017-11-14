@@ -15,8 +15,8 @@
   <tbody>
     <% @channel_groups.each do |channel_group| %>
       <tr>
-        <td><%= channel_group.group_id %></td>
-        <td><%= channel_group.channel_id %></td>
+        <td><%= channel_group.group.name %></td>
+        <td><%= channel_group.channel.name %></td>
         <td><%= channel_group.date %></td>
         <td><%= link_to 'Show', channel_group %></td>
         <td><%= link_to 'Edit', edit_channel_group_path(channel_group) %></td>
