@@ -5,9 +5,12 @@ class User < ApplicationRecord
   has_many :user_roles
   has_many :user_groups
   has_many :groups, :through => :user_groups
+  has_secure_password
   validates :password,  :presence => :true,
                         :confirmation => true,
                         :length => {:within => 6..50}
+  validates_uniqueness_of :username
+
 
   #import csv
   require 'csv'
