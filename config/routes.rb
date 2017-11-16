@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+  
   resources :post_histories
   resources :posts
   resources :boards
@@ -8,6 +10,7 @@ Rails.application.routes.draw do
   resources :user_groups
   resources :channels
   resources :groups
+  resources :sessions
   resources :users do
     collection{post :import}
   end
