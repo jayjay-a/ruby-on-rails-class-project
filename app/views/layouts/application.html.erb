@@ -5,6 +5,8 @@
 
     <div id="navBar">
       <%= link_to 'Channel', channels_path %>
+      <%= link_to 'Sign up', new_user_path %>
+      <%= link_to 'Log In', new_session_path %>
     </div>
 
     <%= csrf_meta_tags %>
@@ -14,6 +16,9 @@
   </head>
 
   <body>
+    <%#flash messages%>
+    <%= flash[:notice]%>
+    
     <%= yield %>
   </body>
 </html>
