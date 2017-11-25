@@ -15,15 +15,19 @@ class User < ApplicationRecord
   #import csv
   require 'csv'
   def self.import(file)
-    CSV.foreach(file.path, headers:true) do |row|
-      users_hash = row.to_hash
-      user = find_or_create_by!(fname: users_hash['fname'])
-      user.update_attributes(users_hash)
-    end
-  end
-
+    CSV.foreach(file.path, headers: true) do |row|
+      user_hash = row.to_hash
+      user = User.where(username: user_hash["username"])
+      if user.count == 1
+        user.first.update_attributes(user_hash)
+      else
+        User.create!(user_hash)
+      end # end if statemnet
+    end # end foreach
+  end # end method
 
 end
+
 def formatted_name
   "#{fname} #{lname}"
 end
