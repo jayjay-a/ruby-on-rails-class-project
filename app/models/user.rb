@@ -16,7 +16,6 @@ class User < ApplicationRecord
   require 'csv'
   def self.import(file)
     CSV.foreach(file.path, headers: true) do |row|
-
       user_hash = row.to_hash
       user = User.where(username: user_hash["username"])
       if user.count == 1
