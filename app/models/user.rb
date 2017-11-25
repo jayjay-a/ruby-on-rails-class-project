@@ -16,10 +16,8 @@ class User < ApplicationRecord
   require 'csv'
   def self.import(file)
     CSV.foreach(file.path, headers: true) do |row|
-
-      user_hash = row.to_hash # exclude the price field
-      user = User.where(fname: user_hash["fname"])
-
+      user_hash = row.to_hash
+      user = User.where(username: user_hash["username"])
       if user.count == 1
         user.first.update_attributes(user_hash)
       else
