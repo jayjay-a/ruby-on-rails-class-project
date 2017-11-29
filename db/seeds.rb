@@ -16,11 +16,11 @@
 
 #delete all info in that table then create default data via seed
 #User.delete_all
-User.create({"fname"=>"Alex", "lname"=>"Tjon", "username"=>"atjon", "password"=>"password"})
-User.create({"fname"=>"William", "lname"=>"Ashby", "username"=>"washby", "password"=>"password"})
-User.create({"fname"=>"Katie", "lname"=>"Trujillo", "username"=>"ktrujillo", "password"=>"password"})
-User.create({"fname"=>"Julius", "lname"=>"Agno", "username"=>"jayjay", "password"=>"jayjay"})
-User.create({"fname"=>"Keith", "lname"=>"Lancaster", "username"=>"admin", "password"=>"password"})
+User.create({"fname"=>"Alex", "lname"=>"Tjon", "username"=>"atjon", "password"=>"password", "role"=>"user"})
+User.create({"fname"=>"William", "lname"=>"Ashby", "username"=>"washby", "password"=>"password", "role"=>"manager"})
+User.create({"fname"=>"Katie", "lname"=>"Trujillo", "username"=>"ktrujillo", "password"=>"password", "role"=>"manager"})
+User.create({"fname"=>"Julius", "lname"=>"Agno", "username"=>"jayjay", "password"=>"password", "role"=>"manager"})
+User.create({"fname"=>"Keith", "lname"=>"Lancaster", "username"=>"admin", "password"=>"password", "role"=>"manager"})
 
 #you can also use ruby code "supposedly" to do it too, used an array but probably better for table with lot of attributes
 Group.delete_all
