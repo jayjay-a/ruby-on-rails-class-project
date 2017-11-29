@@ -6,4 +6,13 @@ class Board < ApplicationRecord
     where("name ILIKE ?","%#{search}%")
   end
 
+  def current_permission
+    @current_permission ||= Permission.new(current_user)
+
+  def authorize
+    if current_permission.allow?
+      redirect_to root_url, notice: "not authorized."
+    end
+  end
+
 end
