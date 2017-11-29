@@ -7,10 +7,16 @@ class Ability
       user ||= User.new # guest user (not logged in)
       if user.role == "manager"
         can :manage, :all
+      elsif
+        can :read, :all
+        can :create, User
+        can :create, Board
+        can :create, Post
       else
         can :read, :all
+        can :create, User
       end
-    #
+    
     # The first argument to `can` is the action you are giving the user
     # permission to do.
     # If you pass :manage it will apply to every action. Other common actions
