@@ -26,7 +26,7 @@
         <% if can? :update, user%>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <% end %>
-        <% if can? :update, user%>
+        <% if can? :destroy, user%>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>
       </tr>

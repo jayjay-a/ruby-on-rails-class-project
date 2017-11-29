@@ -31,9 +31,9 @@
     <%= form.password_field :password, id: :user_password %>
   </div>
 
-
+  <% if can? :manage, @user%>
     <%= form.collection_select(:role, User::ROLES, :to_s, lambda{|i| i.to_s.humanize}) %>
-
+  <% end %>
   <div class="actions">
     <%= form.submit %>
   </div>
