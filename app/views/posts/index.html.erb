@@ -39,5 +39,4 @@
     <h4>There are no Posts containing the term <%= params[:search] %>.</h4>
 <% end %>
 
-<% line_chart @board.post.group(:posted_on) %>
 <%= pie_chart [["Football", 10], ["Basketball", 5]] %>
