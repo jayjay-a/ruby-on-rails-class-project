@@ -40,6 +40,8 @@
   <%= submit_tag 'Import CSV'%>
 <% end%>
 
-<br>
+</br>
 
+<% if can? :create, User %>
 <%= link_to 'New User', new_user_path %>
+<% end %>

@@ -90,6 +90,7 @@ ActiveRecord::Schema.define(version: 20171129083711) do
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "password_hash"
     t.string "role", default: "user"
   end
 
