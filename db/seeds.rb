@@ -15,7 +15,7 @@
 #end
 
 #delete all info in that table then create default data via seed
-User.delete_all
+#User.delete_all
 User.create({"fname"=>"Alex", "lname"=>"Tjon", "username"=>"atjon", "password"=>"password"})
 User.create({"fname"=>"William", "lname"=>"Ashby", "username"=>"washby", "password"=>"password"})
 User.create({"fname"=>"Katie", "lname"=>"Trujillo", "username"=>"ktrujillo", "password"=>"password"})
