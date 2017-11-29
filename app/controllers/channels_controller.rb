@@ -1,6 +1,7 @@
 class ChannelsController < ApplicationController
   before_action :set_channel, only: [:show, :edit, :update, :destroy]
-
+  load_and_authorize_resource
+ 
   # GET /channels
   # GET /channels.json
   def index

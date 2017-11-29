@@ -22,7 +22,9 @@
         <td><%= channel.name %></td>
         <td><%= channel.date %></td>
         <td><%= link_to 'Show', channel %></td>
+        <%# if can? :update, channel%>
         <td><%= link_to 'Edit', edit_channel_path(channel) %></td>
+        <%# end %>
         <td><%= link_to 'Destroy', channel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <td><%= link_to 'Boards', boards_url(:channel_id => channel.id)%></td>
       </tr>
