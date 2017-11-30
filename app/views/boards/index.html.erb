@@ -24,8 +24,12 @@
         <td><%= board.date %></td>
         <td><%= board.channel.name %></td>
         <td><%= link_to 'Show', board %></td>
+        <% if can? :update, board%>
         <td><%= link_to 'Edit', edit_board_path(board) %></td>
+        <% end %>
+        <% if can? :destroy, board%>
         <td><%= link_to 'Destroy', board, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
         <td><%= link_to 'Posts', posts_url(:board_id => board.id)%></td>
       </tr>
     <% end %>
@@ -38,4 +42,6 @@
     <h4>There are no boards containing the term <%= params[:search] %>.</h4>
 <% end %>
 
+<% if can? :create, Board%>
 <%= link_to 'New Board', new_board_path %>
+<% end %>
