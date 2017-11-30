@@ -38,3 +38,5 @@
 <% if @posts.blank? %>
     <h4>There are no Posts containing the term <%= params[:search] %>.</h4>
 <% end %>
+
+<%= pie_chart [["Football", 10], ["Basketball", 5]] %>

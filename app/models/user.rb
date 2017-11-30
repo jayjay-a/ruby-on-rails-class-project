@@ -11,7 +11,7 @@ class User < ApplicationRecord
                         :length => {:within => 6..50}
   validates_uniqueness_of :username
 
-  ROLES = %i[user manager]
+  ROLES = %i[user manager, terminated]
 
   #import csv
   require 'csv'
