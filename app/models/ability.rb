@@ -10,6 +10,7 @@ class Ability
         can :read, [User, Board, Channel, Post]
         can :create, Board
         can :create, Post
+        can :create, User
       else 
         can :read, [User, Board, Channel, Post]
         can :create, User

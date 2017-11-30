@@ -42,6 +42,6 @@
     <h4>There are no boards containing the term <%= params[:search] %>.</h4>
 <% end %>
 
-<% if can? :create, @board%>
+<% if can? :create, Board%>
 <%= link_to 'New Board', new_board_path %>
 <% end %>
