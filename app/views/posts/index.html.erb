@@ -23,7 +23,7 @@
       <tr>
         <td><%= post.name %></td>
         <td><%= post.date %></td>
-        <td><%= post.board.name %></td>
+        <td><%= post.board %></td>
         <td><%= post.message %></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
@@ -38,6 +38,3 @@
 <% if @posts.blank? %>
     <h4>There are no Posts containing the term <%= params[:search] %>.</h4>
 <% end %>
-
-<% line_chart @board.post.group(:posted_on) %>
-<%= pie_chart [["Football", 10], ["Basketball", 5]] %>

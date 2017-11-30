@@ -7,11 +7,11 @@ class Ability
       if user.role == "manager"
         can :manage, :all
       elsif user.role == "user"
-        can :read, [User, Board, Channels, Post]
-        can :create, User
+        can :read, [User, Board, Channel, Post]
         can :create, Board
+        can :create, Post
       else 
-        can :read, [User, Board, Channels, Post]
+        can :read, [User, Board, Channel, Post]
         can :create, User
       end
 
