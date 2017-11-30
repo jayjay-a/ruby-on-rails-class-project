@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   #setting homepage:
   #root to: "thing#otherthing"
   #         "callToController#callToMethod"
-  root to: "pages#home"
+  root to: "channels#index"
 
   get 'signup', to: 'users#new', as: 'signup'
   get 'login', to: 'sessions#new', as: 'login'
