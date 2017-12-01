@@ -28,8 +28,12 @@
         <td><%= post.message %></td>
         <td><%= post.user.username %></td>
         <td><%= link_to 'Show', post %></td>
+        <% if can? :update, post%>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <% if can? :destroy, post%>
+        <% end %>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
@@ -41,4 +45,6 @@
     <h4>There are no Posts containing the term <%= params[:search] %>.</h4>
 <% end %>
 
+<% if can? :create, Post %>
 <%= link_to 'New Post', new_post_path %>
+<% end %>

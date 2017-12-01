@@ -12,16 +12,16 @@ class Ability
         can :create, Post
         can :create, User
         can :update, Board do |board|
-            board.user == user
+          board.user == user
         end
         can :destroy, Board do |board|
           board.user == user
         end
         can :update, Post do |post|
-          board.user == user
+          post.user == user
         end
         can :destroy, Post do |post|
-          board.user == user
+          post.user == user
         end
         elsif
         can :read, [Board, Channel, Post]
