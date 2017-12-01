@@ -12,10 +12,10 @@ class User < ApplicationRecord
                         :length => {:within => 6..50}
   validates_uniqueness_of :username
 
-  ROLES = %i[user manager, terminated]
+  ROLES = %i[employee manager terminated]
 
   #import csv
-  require 'csv'
+  require 'csv'user
   def self.import(file)
     CSV.foreach(file.path, headers: true) do |row|
       user_hash = row.to_hash
