@@ -33,6 +33,7 @@ Channel.create({"name"=>"Company Events"})
 Channel.create({"name"=>"Helpdesk"})
 
 Board.delete_all
+ActiveRecord::Base.connection.reset_pk_sequence!(Model.Board)
 board_list = [
     {name: 'J.U.L.I.U.S.' , channel_id: 1},
     {name: 'Project N M A Dungeon' , channel_id: 1},
