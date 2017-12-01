@@ -35,8 +35,9 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
-    @user = User.new(user_params)
     authorize! :create, @user
+    @user = User.new(user_params)
+    @user.role = 'user'
     respond_to do |format|
       if @user.save
         format.html { redirect_to root_url, notice: 'User was successfully created.' }
