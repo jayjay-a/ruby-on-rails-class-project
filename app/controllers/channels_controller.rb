@@ -1,5 +1,6 @@
 class ChannelsController < ApplicationController
   before_action :set_channel, only: [:show, :edit, :update, :destroy]
+  load_and_authorize_resource #uses cancan here
   #under each method you can use cancan to restrict shit using following the syntax:
   #!authorize! :action, accessto
   # you can check/change these permissions in the ability.rb
