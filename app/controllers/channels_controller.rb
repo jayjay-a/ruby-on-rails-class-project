@@ -34,6 +34,7 @@ class ChannelsController < ApplicationController
   def create
     authorize! :create, @channel
     @channel = Channel.new(channel_params)
+    @channel.created_at = Time.now #set time as sysdate. but idk if we even gon use this
     respond_to do |format|
       if @channel.save
         format.html { redirect_to @channel, notice: 'Channel was successfully created.' }

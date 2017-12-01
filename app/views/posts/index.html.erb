@@ -10,7 +10,7 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Post</th>
       <th>Date</th>
       <th>Board</th>
       <th>Messsage</th>
@@ -23,7 +23,7 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.name %></td>
-        <td><%= post.date %></td>
+        <td><%= post.created_at.in_time_zone("Central Time (US & Canada)").strftime("%Y-%m-%d at %H:%M") %></td>
         <td><%= post.board.name %></td>
         <td><%= post.message %></td>
         <td><%= post.user.username %></td>
