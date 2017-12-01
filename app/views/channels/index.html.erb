@@ -7,10 +7,11 @@
     <%= submit_tag "Search", :name => nil %>
 <% end %>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Channel</th>
+      <th>Boards</th>
       <!--<th>Date</th> -->
       <th colspan="3"></th>
     </tr>
@@ -20,6 +21,7 @@
     <% @channels.each do |channel| %>
       <tr>
         <td><%= channel.name %></td>
+        <td><%= channel.boards.count %> </td>
         <td><%#= channel.date %></td>
         <td><%= link_to 'Show', channel %></td>
         <% if can? :update, channel%>

@@ -16,7 +16,7 @@
 
 #delete all info in that table then create default data via seed
 #User.delete_all
-User.create({"fname"=>"Alex", "lname"=>"Tjon", "username"=>"atjon", "password"=>"password", "role"=>"employee"})
+User.create({"fname"=>"Alex", "lname"=>"Tjon", "username"=>"atjon", "password"=>"password", "role"=>"user"})
 User.create({"fname"=>"William", "lname"=>"Ashby", "username"=>"washby", "password"=>"password", "role"=>"manager"})
 User.create({"fname"=>"Katie", "lname"=>"Trujillo", "username"=>"ktrujillo", "password"=>"password", "role"=>"manager"})
 User.create({"fname"=>"Julius", "lname"=>"Agno", "username"=>"jayjay", "password"=>"password", "role"=>"manager"})
@@ -33,6 +33,7 @@ Channel.create({"name"=>"Company Events"})
 Channel.create({"name"=>"Helpdesk"})
 
 Board.delete_all
+ActiveRecord::Base.connection.reset_pk_sequence!(Model.Board)
 board_list = [
     {name: 'J.U.L.I.U.S.' , channel_id: 1},
     {name: 'Project N M A Dungeon' , channel_id: 1},

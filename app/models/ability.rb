@@ -6,7 +6,7 @@ class Ability
     user ||= User.new # guest user (not logged in)
       if user.role == "manager"
         can :manage, :all
-      elsif user.role == "employee"
+      elsif user.role == "user"
         can :read, [Board, Channel, Post]
         can :create, Board
         can :create, Post
@@ -23,10 +23,12 @@ class Ability
         can :destroy, Post do |post|
           post.user == user
         end
-        elsif
+      elsif user.role == nil
         can :read, [Board, Channel, Post]
         can :create, User
-        end
+      else
+
+      end
 
     #lower to higher permissions approach if we wanna do it this way
     # unless user
