@@ -80,7 +80,7 @@ class BoardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def board_params
-      params.require(:board).permit(:name, :date, :channel_id)
+      params.require(:board).permit(:name, :date, :channel_id, :user_id)
     end
 
 end
