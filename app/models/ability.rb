@@ -23,10 +23,10 @@ class Ability
         can :destroy, Post do |post|
           post.user == user
         end
-        elsif
+      else
         can :read, [Board, Channel, Post]
         can :create, User
-        end
+      end
 
     #lower to higher permissions approach if we wanna do it this way
     # unless user
