@@ -30,8 +30,8 @@ class ChannelsController < ApplicationController
   # POST /channels
   # POST /channels.json
   def create
+    authorize! :create, @channel
     @channel = Channel.new(channel_params)
-
     respond_to do |format|
       if @channel.save
         format.html { redirect_to @channel, notice: 'Channel was successfully created.' }
@@ -46,6 +46,7 @@ class ChannelsController < ApplicationController
   # PATCH/PUT /channels/1
   # PATCH/PUT /channels/1.json
   def update
+    authorize! :update, @channel
     respond_to do |format|
       if @channel.update(channel_params)
         format.html { redirect_to @channel, notice: 'Channel was successfully updated.' }
@@ -60,6 +61,7 @@ class ChannelsController < ApplicationController
   # DELETE /channels/1
   # DELETE /channels/1.json
   def destroy
+    authorize! :destroy, @channel
     @channel.destroy
     respond_to do |format|
       format.html { redirect_to channels_url, notice: 'Channel was successfully destroyed.' }
