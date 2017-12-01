@@ -1,7 +1,10 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-  #load_and_authorize_resource param_method: :user_params
-  load_and_authorize_resource
+  load_and_authorize_resource #uses cancan here
+  #under each method you can use cancan to restrict shit using following the syntax:
+  #!authorize! :action, accessto
+  # you can check/change these permissions in the ability.rb
+
   # GET /users
   # GET /users.json
   def index

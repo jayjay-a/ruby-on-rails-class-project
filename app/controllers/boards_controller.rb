@@ -1,7 +1,9 @@
 class BoardsController < ApplicationController
   before_action :set_board, only: [:show, :edit, :update, :destroy]
-  load_and_authorize_resource
-  
+  #under each method you can use cancan to restrict shit using following the syntax:
+  #!authorize! :action, accessto
+  # you can check/change these permissions in the ability.rb
+
   # GET /boards
   # GET /boards.json
   def index
@@ -35,6 +37,7 @@ class BoardsController < ApplicationController
   def create
     authorize! :create, @board
     @board = Board.new(board_params)
+    #this to make board be posted by current user
     @board.user_id = current_user.id
     respond_to do |format|
       if @board.save
