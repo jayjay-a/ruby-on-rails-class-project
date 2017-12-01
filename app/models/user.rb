@@ -15,7 +15,7 @@ class User < ApplicationRecord
   ROLES = %i[employee manager terminated]
 
   #import csv
-  require 'csv'user
+  require 'csv'
   def self.import(file)
     CSV.foreach(file.path, headers: true) do |row|
       user_hash = row.to_hash
