@@ -21,7 +21,7 @@
     <% @channels.each do |channel| %>
       <tr>
         <td><%= channel.name %></td>
-        <td><%= channel.boards.count %> <td>
+        <td><%= channel.boards.count %> </td>
         <td><%#= channel.date %></td>
         <td><%= link_to 'Show', channel %></td>
         <% if can? :update, channel%>
