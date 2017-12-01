@@ -6,7 +6,7 @@ class Ability
     user ||= User.new # guest user (not logged in)
       if user.role == "manager"
         can :manage, :all
-      elsif user.role == "employee"
+      elsif user.role == "user"
         can :read, [Board, Channel, Post]
         can :create, Board
         can :create, Post
