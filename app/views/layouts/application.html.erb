@@ -14,7 +14,9 @@
         <ul class="nav navbar-nav navbar-right">
           <li><%= link_to 'Home', root_url %></li>
           <li><%= link_to 'Channels', channels_path %></li>
+          <% if can? :manager, User %>
           <li><%= link_to 'Users', users_path %></li>
+          <% end %>
         
           <% if current_user %>
             <li class="dropdown">
