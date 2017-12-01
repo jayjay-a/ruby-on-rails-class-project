@@ -11,7 +11,7 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Date</th>
+      <!--<th>Date</th> -->
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,7 +20,7 @@
     <% @channels.each do |channel| %>
       <tr>
         <td><%= channel.name %></td>
-        <td><%= channel.date %></td>
+        <td><%#= channel.date %></td>
         <td><%= link_to 'Show', channel %></td>
         <% if can? :update, channel%>
         <td><%= link_to 'Edit', edit_channel_path(channel) %></td>

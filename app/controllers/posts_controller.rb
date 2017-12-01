@@ -1,6 +1,8 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-  load_and_authorize_resource
+   #under each method you can use cancan to restrict shit using following the syntax:
+  #!authorize! :action, accessto
+  # you can check/change these permissions in the ability.rb
 
   # GET /posts
   # GET /posts.json
@@ -35,6 +37,7 @@ class PostsController < ApplicationController
   def create
     authorize! :create, @post
     @post = Post.new(post_params)
+    #this to make posts be posted by the current user
     @post.user_id = current_user.id
     respond_to do |format|
       if @post.save
