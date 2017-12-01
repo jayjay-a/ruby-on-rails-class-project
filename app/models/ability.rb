@@ -11,10 +11,22 @@ class Ability
         can :create, Board
         can :create, Post
         can :create, User
-      elsif
+        can :update, Board do |board|
+            board.user == user
+        end
+        can :destroy, Board do |board|
+          board.user == user
+        end
+        can :update, Post do |post|
+          board.user == user
+        end
+        can :destroy, Post do |post|
+          board.user == user
+        end
+        elsif
         can :read, [Board, Channel, Post]
         can :create, User
-      end
+        end
 
     #lower to higher permissions approach if we wanna do it this way
     # unless user
