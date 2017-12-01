@@ -37,8 +37,8 @@ class PostsController < ApplicationController
   def create
     authorize! :create, @post
     @post = Post.new(post_params)
-    #this to make posts be posted by the current user
-    @post.user_id = current_user.id
+    @post.user_id = current_user.id #this to make posts be posted by the current user
+    @post.created_at = Time.now # this to make post at current time
     respond_to do |format|
       if @post.save
         format.html { redirect_to @post, notice: 'Post was successfully created.' }

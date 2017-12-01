@@ -37,8 +37,8 @@ class BoardsController < ApplicationController
   def create
     authorize! :create, @board
     @board = Board.new(board_params)
-    #this to make board be posted by current user
-    @board.user_id = current_user.id
+    @board.user_id = current_user.id #this to make board be posted by current user
+    @board.created_at = Time.now # this to make post at current time
     respond_to do |format|
       if @board.save
         format.html { redirect_to @board, notice: 'Board was successfully created.' }

@@ -17,11 +17,6 @@
   </div>
 
   <div class="field">
-    <%= form.label :date %>
-    <%= form.datetime_select :date, id: :post_date %>
-  </div>
-
-  <div class="field">
     <%= form.label :board_id %>
     <%= form.collection_select :board_id, Board.all, :id, :name ,{prompt: "Select a board"}, {:class=>"btn btn-default dropdown-toggle"}%>
   </div>
