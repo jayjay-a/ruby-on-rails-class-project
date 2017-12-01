@@ -26,10 +26,10 @@
     <%= form.collection_select :board_id, Board.all, :id, :name %>
   </div>
 
-    <div class="field">
-      <%= form.label :message %>
-      <%= form.text_area :message, id: :post_message, :cols=>"50", :rows => "10"%>
-    </div>
+  <div class="field">
+    <%= form.label :message %>
+    <%= form.text_area :message, id: :post_message, :cols=>"50", :rows => "10"%>
+  </div>
 
   <div class="actions">
     <%= form.submit %>

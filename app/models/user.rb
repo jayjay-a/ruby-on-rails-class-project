@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   has_many :post_histories
-  has_many :posts, :through => :post_histories
+  has_many :posts
+  has_many :boards
   has_many :user_statuses
   has_many :user_roles
   has_many :user_groups
@@ -11,7 +12,7 @@ class User < ApplicationRecord
                         :length => {:within => 6..50}
   validates_uniqueness_of :username
 
-  ROLES = %i[user manager, terminated]
+  ROLES = %i[employee manager terminated]
 
   #import csv
   require 'csv'

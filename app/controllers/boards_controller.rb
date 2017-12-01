@@ -33,8 +33,9 @@ class BoardsController < ApplicationController
   # POST /boards
   # POST /boards.json
   def create
-    @board = Board.new(board_params)
     authorize! :create, @board
+    @board = Board.new(board_params)
+    @board.user_id = current_user.id
     respond_to do |format|
       if @board.save
         format.html { redirect_to @board, notice: 'Board was successfully created.' }
@@ -80,7 +81,7 @@ class BoardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def board_params
-      params.require(:board).permit(:name, :date, :channel_id)
+      params.require(:board).permit(:name, :date, :channel_id, :user_id,)
     end
 
 end

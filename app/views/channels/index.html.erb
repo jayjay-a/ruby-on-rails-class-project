@@ -40,4 +40,6 @@
     <h4>There are no Channels containing the term <%= params[:search] %>.</h4>
 <% end %>
 
+<% if can? :create, Channel %>
 <%= link_to 'New Channel', new_channel_path %>
+<% end %>
