@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= form.label :channel_id %>
-    <%= form.collection_select :channel_id, Channel.all, :id, :name %>
+    <%= form.collection_select :channel_id, Channel.all, :id, :name ,{prompt: "Select a channel"}, {:class=>"btn btn-default dropdown-toggle"}%>
   </div>
 
 
