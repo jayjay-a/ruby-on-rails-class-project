@@ -31,8 +31,15 @@
     <%= form.password_field :password, id: :user_password %>
   </div>
 
+  <div class="field">
+      <%= form.label :password_confirmation, "Confirmation" %>
+      <%= form.password_field :password_confirmation %>
+  </div>
+
   <% if can? :manage, @user%>
+  <div class="field">
     <%= form.collection_select(:role, User::ROLES, :to_s, lambda{|i| i.to_s.humanize}) %>
+  </div>
   <% end %>
   <div class="actions">
     <%= form.submit %>
