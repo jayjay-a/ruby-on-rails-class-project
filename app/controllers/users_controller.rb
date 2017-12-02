@@ -20,7 +20,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    authorize! :update, @user
+    authorize! :show, @user
   end
 
   # GET /users/new

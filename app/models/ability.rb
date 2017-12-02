@@ -23,14 +23,17 @@ class Ability
         can :destroy, Post do |post|
           post.user == user
         end
-        can :update, User do |user|
-          user.username == user.username
+        can :show, User do |i|
+          i.id == user.id
         end
-      elsif user.role == nil
+        can :update, User do |i|
+          i.id == user.id
+        end
+      elsif user.role == "terminated"
+        can :read, [Board, Channel, Post]
+      else
         can :read, [Board, Channel, Post]
         can :create, User
-      else
-
       end
 
     #lower to higher permissions approach if we wanna do it this way
