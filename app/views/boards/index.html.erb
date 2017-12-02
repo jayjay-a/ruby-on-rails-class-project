@@ -23,7 +23,7 @@
   <tbody>
     <% @boards.each do |board| %>
       <tr>
-        <td><%= board.name %></td>
+        <td><%= link_to board.name, board %></td>
         <td><%= board.message%></td>
         <td><%= board.posts.count %> </td>
         <td><%= board.created_at.in_time_zone("Central Time (US & Canada)").strftime("%Y-%m-%d at %H:%M") %></td>
@@ -49,5 +49,30 @@
 <% end %>
 
 <% if can? :create, Board%>
-<%= link_to 'New Board', new_board_path %>
+    <%= link_to 'New Board', new_board_path %>
 <% end %>
+
+<br>
+<br>
+<%=
+  if params[:channel_id]
+      @myChannels = Channel.where(id: params[:channel_id])
+      line_chart @myChannels.map { |channel|
+      {name: channel.name, data: channel.boards.group_by_day(:created_at, format: "%B %d, %Y").count}},
+      title: 'Boards per Channel', xtitle: 'Day', ytitle: 'Number of Boards', discrete: true
+    else
+      @myChannels = Channel.all
+      line_chart @myChannels.map { |channel|
+        {name: channel.name, data: channel.boards.group_by_day(:created_at, format: "%B %d, %Y").count}},
+                 title: 'Boards per Channel', xtitle: 'Day', ytitle: 'Number of Boards', discrete: true
+    end
+ %>
+
+<br>
+<br>
+<%=
+  @myUsers = User.all
+  line_chart @myUsers.map { |user|
+    {name: user.username, data: user.boards.group_by_day(:created_at, format: "%B %d, %Y").count}},
+             title: 'Boards per User', xtitle: 'Day', ytitle: 'Number of Boards', discrete: true
+%>

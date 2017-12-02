@@ -20,6 +20,8 @@ class BoardsController < ApplicationController
     end
   end
 
+
+
   # GET /boards/1
   # GET /boards/1.json
   def show

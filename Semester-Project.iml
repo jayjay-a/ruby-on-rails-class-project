@@ -20,7 +20,7 @@
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bundle" />
     </content>
-    <orderEntry type="jdk" jdkName="ruby-2.4.2-p198" jdkType="RUBY_SDK" />
+    <orderEntry type="jdk" jdkName="ruby-2.4.1-p111" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="actioncable (v5.1.4, ruby-2.4.2-p198) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v5.1.4, ruby-2.4.2-p198) [gem]" level="application" />

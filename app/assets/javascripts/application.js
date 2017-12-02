@@ -23,6 +23,6 @@
 //= require highcharts/modules/heatmap
 //= require highcharts/modules/no-data-to-display
 //= require highcharts/modules/offline-exporting
-// = require highcharts
-//= require highcharts/themes/dark-blue
+//= require highcharts
+//= require highcharts/themes/dark-unica
 //= require chartkick

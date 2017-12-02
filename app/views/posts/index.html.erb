@@ -46,5 +46,28 @@
 <% end %>
 
 <% if can? :create, Post %>
-<%= link_to 'New Post', new_post_path %>
+    <%= link_to 'New Post', new_post_path %>
 <% end %>
+<br>
+<br>
+<%=
+  if params[:board_id]
+    @myBoards = Board.where(id: params[:board_id])
+    line_chart @myBoards.map { |board|
+      {name: board.name, data: board.posts.group_by_day(:created_at, format: "%B %d, %Y").count}},
+               title: 'Posts per Board', xtitle: 'Day', ytitle: 'Number of Posts', discrete: true
+  else
+    @myBoards = Board.all
+    line_chart @myBoards.map { |board|
+      {name: board.name, data: board.posts.group_by_day(:created_at, format: "%B %d, %Y").count}},
+               title: 'Posts per Board', xtitle: 'Day', ytitle: 'Number of Posts', discrete: true
+  end
+%>
+<br>
+<br>
+<%=
+  @myUsers = User.all
+  line_chart @myUsers.map { |user|
+    {name: user.username, data: user.posts.group_by_day(:created_at, format: "%B %d, %Y").count}},
+             title: 'Posts per User', xtitle: 'Day', ytitle: 'Number of Posts', discrete: true
+%>
