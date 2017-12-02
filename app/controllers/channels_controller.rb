@@ -14,7 +14,7 @@ class ChannelsController < ApplicationController
       else
         @channels = Channel.all.order("created_at DESC")
       end
-    end
+  end
 
   # GET /channels/1
   # GET /channels/1.json
