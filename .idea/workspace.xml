@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/Gemfile" line="11" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="69015427-4059-4d23-8221-ed585593157b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMLDiagrams/UMLLoggingIn.jpg" afterPath="$PROJECT_DIR$/UMLDiagrams/UMLLoggingIn.jpg" />
@@ -223,6 +226,22 @@
             <id>UI Form Problems</id>
           </State>
         </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Action Cable</id>
+          </State>
+        </selected-state>
       </profile-state>
     </entry>
   </component>
