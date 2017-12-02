@@ -68,7 +68,7 @@ class ChannelsController < ApplicationController
     authorize! :destroy, @channel
     @channel.destroy
     respond_to do |format|
-      format.html { redirect_to channels_url, flash: { success: 'Channel was successfully destroyed.' }}
+      format.html { redirect_to channels_url, flash: { warning: 'Channel was successfully destroyed.' }}
       format.json { head :no_content }
     end
   end

@@ -75,7 +75,7 @@ class BoardsController < ApplicationController
     authorize! :destroy, @board
     @board.destroy
     respond_to do |format|
-      format.html { redirect_to boards_url, flash: { success: 'Board was successfully destroyed.' }}
+      format.html { redirect_to boards_url, flash: { warning: 'Board was successfully destroyed.' }}
       format.json { head :no_content }
     end
   end

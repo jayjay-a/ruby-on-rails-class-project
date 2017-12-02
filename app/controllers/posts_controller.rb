@@ -72,7 +72,7 @@ class PostsController < ApplicationController
     authorize! :destroy, @post
     @post.destroy
     respond_to do |format|
-      format.html { redirect_to posts_url, flash: { success: 'Post was successfully destroyed.' }}
+      format.html { redirect_to posts_url, flash: { warning: 'Post was successfully destroyed.' }}
       format.json { head :no_content }
     end
   end
