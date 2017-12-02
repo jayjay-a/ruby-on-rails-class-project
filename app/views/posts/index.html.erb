@@ -63,4 +63,11 @@
                title: 'Posts per Board', xtitle: 'Day', ytitle: 'Number of Posts', discrete: true
   end
 %>
-
+<br>
+<br>
+<%=
+  @myUsers = User.all
+  line_chart @myUsers.map { |user|
+    {name: user.username, data: user.posts.group_by_day(:created_at, format: "%B %d, %Y").count}},
+             title: 'Posts per User', xtitle: 'Day', ytitle: 'Number of Posts', discrete: true
+%>

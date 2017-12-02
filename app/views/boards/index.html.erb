@@ -66,3 +66,11 @@
     end
  %>
 
+<br>
+<br>
+<%=
+  @myUsers = User.all
+  line_chart @myUsers.map { |user|
+    {name: user.username, data: user.boards.group_by_day(:created_at, format: "%B %d, %Y").count}},
+             title: 'Boards per User', xtitle: 'Day', ytitle: 'Number of Boards', discrete: true
+%>
