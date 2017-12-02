@@ -38,7 +38,7 @@
 
   <% if can? :manage, @user%>
   <div class="field">
-    <%= form.collection_select(:role, User::ROLES, :to_s, lambda{|i| i.to_s.humanize},{prompt: "Select a channel"}, {:class=>"btn btn-default dropdown-toggle"})%>
+    <%= form.collection_select(:role, User::ROLES, :to_s, lambda{|i| i.to_s.humanize},{prompt: "Select a role"}, {:class=>"btn btn-default dropdown-toggle"})%>
   </div>
   <% end %>
   <div class="actions">

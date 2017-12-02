@@ -45,7 +45,7 @@ class BoardsController < ApplicationController
     @board.created_at = Time.now # this to make post at current time
     respond_to do |format|
       if @board.save
-        format.html { redirect_to @board, notice: 'Board was successfully created.' }
+        format.html { redirect_to @board, flash: { success: 'Board was successfully created.' }}
         format.json { render :show, status: :created, location: @board }
       else
         format.html { render :new }
@@ -60,7 +60,7 @@ class BoardsController < ApplicationController
     authorize! :update, @board
     respond_to do |format|
       if @board.update(board_params)
-        format.html { redirect_to @board, notice: 'Board was successfully updated.' }
+        format.html { redirect_to @board, flash: { info: 'Board was successfully updated.' }}
         format.json { render :show, status: :ok, location: @board }
       else
         format.html { render :edit }
@@ -75,7 +75,7 @@ class BoardsController < ApplicationController
     authorize! :destroy, @board
     @board.destroy
     respond_to do |format|
-      format.html { redirect_to boards_url, notice: 'Board was successfully destroyed.' }
+      format.html { redirect_to boards_url, flash: { warning: 'Board was successfully destroyed.' }}
       format.json { head :no_content }
     end
   end

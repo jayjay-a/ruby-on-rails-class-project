@@ -14,7 +14,7 @@ class ChannelsController < ApplicationController
       else
         @channels = Channel.all.order("created_at DESC")
       end
-    end
+  end
 
   # GET /channels/1
   # GET /channels/1.json
@@ -30,7 +30,6 @@ class ChannelsController < ApplicationController
   # GET /channels/1/edit
   def edit
   end
-
   # POST /channels
   # POST /channels.json
   def create
@@ -39,7 +38,7 @@ class ChannelsController < ApplicationController
     @channel.created_at = Time.now #set time as sysdate. but idk if we even gon use this
     respond_to do |format|
       if @channel.save
-        format.html { redirect_to @channel, notice: 'Channel was successfully created.' }
+        format.html { redirect_to @channel, flash: { success: 'Channel was successfully created.' }}
         format.json { render :show, status: :created, location: @channel }
       else
         format.html { render :new }
@@ -54,7 +53,7 @@ class ChannelsController < ApplicationController
     authorize! :update, @channel
     respond_to do |format|
       if @channel.update(channel_params)
-        format.html { redirect_to @channel, notice: 'Channel was successfully updated.' }
+        format.html { redirect_to @channel, flash: { info: 'Channel was successfully updated.' }}
         format.json { render :show, status: :ok, location: @channel }
       else
         format.html { render :edit }
@@ -69,7 +68,7 @@ class ChannelsController < ApplicationController
     authorize! :destroy, @channel
     @channel.destroy
     respond_to do |format|
-      format.html { redirect_to channels_url, notice: 'Channel was successfully destroyed.' }
+      format.html { redirect_to channels_url, flash: { warning: 'Channel was successfully destroyed.' }}
       format.json { head :no_content }
     end
   end
