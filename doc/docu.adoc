@@ -8,55 +8,44 @@
 
 === Full UML Model
 
-image:: URL [title=UML Model]
+image::SemesterProjectClassUML.jpg[title=UML Model]
 
 === UML Activity Diagrams
 
-image::  URL  [title=CSV, 300]
+image::UMLSigningUp.jpg[title=Signing Up]
 
 {empty} +
 
-image:: URL  [title=Status, 300]
+image::UMLLoggingIn.jpg[title=Logging In]
 
 {empty} +
 
-image:: URL  [title=Reset Password, 300]
+image::UMLActivityViewingChannels.jpg[title=Viewing Channels]
+
+{empty} +
+image::UMLActivityViewingBoard.jpg[title=Viewing Board]
 
 {empty} +
 
-image::  URL  [title=Create Channel, 300]
+image::UMLActivityEditingBoard.jpg[title=Editing Board]
 
 {empty} +
 
-image::  URL  [title=Log In, 300]
+image::UMLActivityDeletingBoard.jpg[title=Deleting Board]
 
 {empty} +
 
-image:: URL  [title=Change Password]
+image::UMLActivityViewingPost.jpg[title=Viewing Post]
 
 {empty} +
 
-image::  URL  [title=Create Post, 300]
+image::UMLActivityEditingPost.jpg[title=Editing Post]
 
 {empty} +
 
-image::  URL  [title=Delete Post, 300]
+image::UMLActivityDeletingPost.jpg[title=Deleting Post]
 
 {empty} +
-
-image::  URL  [title=Reply to Post, 300]
-
-{empty} +
-
-image:: URL  [title=Search Post, 300]
-
-{empty} +
-
-image:: URL  [title=Lists of Posts and Replies, 300]
-
-{empty} +
-
-image:: URL  [title=Reports, 300]
 
 == User Manual
 
@@ -66,120 +55,137 @@ This manual will go over how to use the message board from the perspective of a 
 
 ==== To uploading user information with a CSV file
 
-. step 1
+. Click Home Page in the navigation bar.
 
-. step 2
+. Click Log In on the top right hand corner.
 
-. step 3
+. Enter your credentials (username and password) to log in.
+
+. Click Users on the navigation bar.
+
+. Click the Choose File button and select the CSV from your files you wish to upload.
+
+. Click the open button to select your file.
+
+. Click the Import CSV button and it will upload your CSV.
 
 ==== To manage users and their access rights
 
-. step 1
+. Click Home Page in the navigation bar.
 
-. step 2
+. Click Users on the navigation bar.
 
-. step 3
+. Click Edit from any user that you wish to change their access right.
+
+. Use the only drop down box to change the user's access rights.
+
+. Enter their credentials and click the Sign Up button to change their access rights.
 
 ==== To reset a user’s password
 
-. step 1
+. Click Home Page in the navigation bar.
 
-. step 2
+. Click Users on the navigation bar.
 
-. step 3
+. Click Edit from any user that you wish to change their password.
+
+. Enter the desired password and click the Sign Up button to change their password.
 
 ==== To create a channel
 
-. step 1
+. Click Home Page in the navigation bar.
 
-. step 2
+. Click the New Channel button at the bottom of the screen.
 
-. step 3
+. Enter the new channel name you would like to name the channel and hit the submit button.
+
+==== To view reports on daily activity by board
+
+. Click Home Page in the navigation bar.
+
+. Click Channel you wish to view the reports on.
+
+. The report will be at the bottom of the page.
+
+
+==== To view reports on daily activity by user
+
+. Click Home Page in the navigation bar.
+
+. Click Channel you wish to view the reports on.
+
+. The report will be at the bottom of the page.
 
 === Board User
 
 ==== To create an account
 
-. step 1
+. Click Home Page in the navigation bar.
 
-. step 2
+. Click Sign up in the navigation bar.
 
-. step 3
+. Enter the prompted information.
+
+. Hit the sign up button to create the account.
 
 ==== To change my password
 
-. step 1
+. Click the Account drop down in the navigation bar.
 
-. step 2
+. Click profile.
 
-. step 3
+. Click the Edit button.
+
+. Enter your new password.
+
+. Click the Sign Up button to finalize your new password.
 
 ==== To post a question to a board
 
-. step 1
+. Click Home Page in the navigation bar.
 
-. step 2
+. Click the channel you want to post in.
 
-. step 3
+. Click the New Board link.
+
+. Enter the necessary information and click submit to post!
+
 
 ==== To delete a post
 
-. step 1
+. Click Home Page in the navigation bar.
 
-. step 2
+. Click the channel you want to delete the post in.
 
-. step 3
+. Click the board you want to delete the post in.
+
+. Click the destroy option next to the post you want to delete.
 
 ==== To reply to a post
 
-. step 1
+. Click Home Page in the navigation bar.
 
-. step 2
+. Click the channel you want to post in.
 
-. step 3
+. Click the posts option next to the board you want to post in.
+
+. Enter the necessary information and click submit to post!
 
 ==== To search for a post
 
-. step 1
+. Click Home Page in the navigation bar.
 
-. step 2
+. Click the channel you want to search in.
 
-. step 3
+. Click the posts option next to the board you want to search in.
 
-==== To view my posts 
+. Enter your search into the search bar.
 
-. step 1
 
-. step 2
 
-. step 3
 
-=== Company Manager
 
-==== To view reports on daily activity by board
-
-. step 1
-
-. step 2
-
-. step 3
-
-==== To view reports on daily activity by channel
-
-. step 1
-
-. step 2
-
-. step 3
-
-==== To view reports on daily activity by user
-
-. step 1
-
-. step 2
-
-. step 3
 
 == Post-Mortem
 
-This is your assessment of the project and the issues that you encountered and where you and/or the assignment could improve.
+This Project allowed us to get a hands-on experience with rails and look at the power as well as functionality that comes with a rails app.  A very interesting part of working with rails is interacting with all the possible gems available and being able to find one already made for any function you can think of.  However, dealing with gems can sometimes be problematic, most popular gems have decent documentation other less prominent ones may not. This also requires developers to become familiar with functions that they may not be used to.  Our project team was not too familiar with rails syntax as well as some of its other features which gave us some difficulties during a project.  If given more time or team would experiment more and polish up the project  in areas and maybe lacking.
