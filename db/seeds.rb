@@ -24,14 +24,15 @@ User.create({"fname"=>"William",  "lname"=>"Ashby",     "username"=>"washby",   
 User.create({"fname"=>"Katie",    "lname"=>"Trujillo",  "username"=>"ktrujillo",  "password"=>"password", "role"=>"user"})
 User.create({"fname"=>"Julius",   "lname"=>"Agno",      "username"=>"jayjay",     "password"=>"password", "role"=>"manager"})
 User.create({"fname"=>"Keith",    "lname"=>"Lancaster", "username"=>"admin",      "password"=>"password", "role"=>"manager"})
-
 #you can also use ruby code "supposedly" to do it too, used an array but probably better for table with lot of attributes
+
 Channel.create({"name"=>"Research and Development"})
 Channel.create({"name"=>"Ruby on Rails"})
 Channel.create({"name"=>"New Products"})
 Channel.create({"name"=>"Company Events"})
 Channel.create({"name"=>"Helpdesk"})
 
+#Board.create!({"name"=>"J.U.L.I.U.S.","user_id"=>"1","channel_id"=>"1","created_at"=>"2017-12-01 at 00:00"})
 board_list = [
     {name: 'J.U.L.I.U.S.',user_id:1,channel_id: 1,created_at: '2017-12-01 at 00:00'},
     {name: 'Project N M A Dungeon', user_id:2 ,channel_id: 1,created_at: '2017-12-01 at 00:00'},
@@ -50,7 +51,6 @@ board_list.each do |board|
   Board.create board
 end
 
-Post.delete_all
 post_list = [
     { board_id: 1 ,   user_id: 1, message: 'j u l i u s' ,created_at: '2017-12-01 at 00:00'},
     { board_id: 2 ,   user_id: 2, message: 'Is it open yet?' ,created_at: '2017-12-02 at 00:00'},
