@@ -14,7 +14,8 @@ class UsersController < ApplicationController
   #import csv
   def import
     User.import(params[:file])
-    redirect_to users_url, notice: 'CSV file successfully imported'
+    redirect_to users_url, flash: { success: "CSV file successfully imported" }
+    
   end
 
   # GET /users/1
@@ -40,7 +41,7 @@ class UsersController < ApplicationController
     @user.role = 'user'
     respond_to do |format|
       if @user.save
-        format.html { redirect_to root_url, notice: 'User was successfully created.' }
+        format.html { redirect_to root_url, flash: {success: 'User was successfully created.'} }
         format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new }
@@ -55,7 +56,7 @@ class UsersController < ApplicationController
     authorize! :update, @user
     respond_to do |format|
       if @user.update(user_params)
-        format.html { redirect_to @user, notice: 'User was successfully updated.' }
+        format.html { redirect_to @user, flash: { info: "User was successfully updated." } }
         format.json { render :show, status: :ok, location: @user }
       else
         format.html { render :edit }
@@ -63,14 +64,14 @@ class UsersController < ApplicationController
       end
     end
   end
-
+  
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
     authorize! :destroy, @user
     @user.destroy
     respond_to do |format|
-      format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
+      format.html { redirect_to users_url, flash: { warning: "User was successfully destroyed." } }
       format.json { head :no_content }
     end
   end

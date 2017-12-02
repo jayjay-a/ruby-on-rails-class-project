@@ -1,0 +1,6 @@
+fname,lname,username,password,role
+first1,last1,user1,123456,manager
+first2,last2,user2,123456,user
+first3,last3,user3,123456,terminated
+first4,last4,user4,123456,manager
+first5,last5,user5,123456,user
