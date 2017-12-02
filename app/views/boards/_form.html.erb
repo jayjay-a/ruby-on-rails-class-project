@@ -21,7 +21,10 @@
     <%= form.collection_select :channel_id, Channel.all, :id, :name ,{prompt: "Select a channel"}, {:class=>"btn btn-default dropdown-toggle"}%>
   </div>
 
-
+  <div class="field">
+    <%= form.label :message %>
+    <%= form.text_area :message, id: :board_message, :cols=>"50", :rows => "10"%>
+  </div>
 
   <div class="actions">
     <%= form.submit 'Submit', class: "btn btn-default"%>
