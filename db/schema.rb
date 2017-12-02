@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171201132505) do
+ActiveRecord::Schema.define(version: 20171202001843) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20171201132505) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
+    t.text "message"
   end
 
   create_table "channel_groups", force: :cascade do |t|
@@ -92,6 +93,7 @@ ActiveRecord::Schema.define(version: 20171201132505) do
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "password_hash"
     t.string "role"
   end
 
