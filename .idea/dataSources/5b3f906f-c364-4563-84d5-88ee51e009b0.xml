@@ -15,622 +15,648 @@
       <ObjectId>16433</ObjectId>
     </database>
     <database id="6" parent="1" name="Semester-Project_development">
-      <ObjectId>24625</ObjectId>
+      <ObjectId>24991</ObjectId>
       <Current>1</Current>
       <Visible>1</Visible>
     </database>
-    <schema id="7" parent="6" name="public">
+    <database id="7" parent="1" name="ecredit">
+      <ObjectId>32817</ObjectId>
+    </database>
+    <database id="8" parent="1" name="Semester-Project_test">
+      <ObjectId>32862</ObjectId>
+    </database>
+    <schema id="9" parent="6" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2017-11-26.21:23:37.190</IntrospectionTimestamp>
-      <IntrospectionStateNumber>672</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2017-12-02.01:08:48.578</IntrospectionTimestamp>
+      <IntrospectionStateNumber>3063</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
-    <schema id="8" parent="6" name="pg_catalog">
+    <schema id="10" parent="6" name="pg_catalog">
       <ObjectId>11</ObjectId>
     </schema>
-    <schema id="9" parent="6" name="pg_toast">
+    <schema id="11" parent="6" name="pg_toast">
       <ObjectId>99</ObjectId>
     </schema>
-    <schema id="10" parent="6" name="pg_temp_1">
+    <schema id="12" parent="6" name="pg_temp_1">
       <ObjectId>11736</ObjectId>
     </schema>
-    <schema id="11" parent="6" name="pg_toast_temp_1">
+    <schema id="13" parent="6" name="pg_toast_temp_1">
       <ObjectId>11737</ObjectId>
     </schema>
-    <schema id="12" parent="6" name="information_schema">
+    <schema id="14" parent="6" name="information_schema">
       <ObjectId>12648</ObjectId>
     </schema>
-    <sequence id="13" parent="7" name="boards_id_seq">
-      <ObjectId>24713</ObjectId>
-      <StateNumber>667</StateNumber>
+    <sequence id="15" parent="9" name="boards_id_seq">
+      <ObjectId>25079</ObjectId>
+      <StateNumber>997</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="14" parent="7" name="channel_groups_id_seq">
-      <ObjectId>24683</ObjectId>
-      <StateNumber>664</StateNumber>
+    <sequence id="16" parent="9" name="channel_groups_id_seq">
+      <ObjectId>25049</ObjectId>
+      <StateNumber>994</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="15" parent="7" name="channels_id_seq">
-      <ObjectId>24664</ObjectId>
-      <StateNumber>662</StateNumber>
+    <sequence id="17" parent="9" name="channels_id_seq">
+      <ObjectId>25030</ObjectId>
+      <StateNumber>992</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="16" parent="7" name="groups_id_seq">
-      <ObjectId>24653</ObjectId>
-      <StateNumber>661</StateNumber>
+    <sequence id="18" parent="9" name="groups_id_seq">
+      <ObjectId>25019</ObjectId>
+      <StateNumber>991</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="17" parent="7" name="post_histories_id_seq">
-      <ObjectId>24735</ObjectId>
-      <StateNumber>669</StateNumber>
+    <sequence id="19" parent="9" name="post_histories_id_seq">
+      <ObjectId>25101</ObjectId>
+      <StateNumber>999</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="18" parent="7" name="posts_id_seq">
-      <ObjectId>24724</ObjectId>
-      <StateNumber>668</StateNumber>
+    <sequence id="20" parent="9" name="posts_id_seq">
+      <ObjectId>25090</ObjectId>
+      <StateNumber>998</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="19" parent="7" name="user_groups_id_seq">
-      <ObjectId>24675</ObjectId>
-      <StateNumber>663</StateNumber>
+    <sequence id="21" parent="9" name="user_groups_id_seq">
+      <ObjectId>25041</ObjectId>
+      <StateNumber>993</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="20" parent="7" name="user_roles_id_seq">
-      <ObjectId>24702</ObjectId>
-      <StateNumber>666</StateNumber>
+    <sequence id="22" parent="9" name="user_roles_id_seq">
+      <ObjectId>25068</ObjectId>
+      <StateNumber>996</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="21" parent="7" name="user_statuses_id_seq">
-      <ObjectId>24691</ObjectId>
-      <StateNumber>665</StateNumber>
+    <sequence id="23" parent="9" name="user_statuses_id_seq">
+      <ObjectId>25057</ObjectId>
+      <StateNumber>995</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="22" parent="7" name="users_id_seq">
-      <ObjectId>24642</ObjectId>
-      <StateNumber>660</StateNumber>
+    <sequence id="24" parent="9" name="users_id_seq">
+      <ObjectId>25008</ObjectId>
+      <StateNumber>990</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <table id="23" parent="7" name="ar_internal_metadata">
-      <ObjectId>24634</ObjectId>
-      <StateNumber>659</StateNumber>
+    <table id="25" parent="9" name="ar_internal_metadata">
+      <ObjectId>25000</ObjectId>
+      <StateNumber>989</StateNumber>
     </table>
-    <table id="24" parent="7" name="boards">
-      <ObjectId>24715</ObjectId>
-      <StateNumber>667</StateNumber>
+    <table id="26" parent="9" name="boards">
+      <ObjectId>25081</ObjectId>
+      <StateNumber>3063</StateNumber>
     </table>
-    <table id="25" parent="7" name="channel_groups">
-      <ObjectId>24685</ObjectId>
-      <StateNumber>664</StateNumber>
+    <table id="27" parent="9" name="channel_groups">
+      <ObjectId>25051</ObjectId>
+      <StateNumber>994</StateNumber>
     </table>
-    <table id="26" parent="7" name="channels">
-      <ObjectId>24666</ObjectId>
-      <StateNumber>662</StateNumber>
+    <table id="28" parent="9" name="channels">
+      <ObjectId>25032</ObjectId>
+      <StateNumber>992</StateNumber>
     </table>
-    <table id="27" parent="7" name="groups">
-      <ObjectId>24655</ObjectId>
-      <StateNumber>661</StateNumber>
+    <table id="29" parent="9" name="groups">
+      <ObjectId>25021</ObjectId>
+      <StateNumber>991</StateNumber>
     </table>
-    <table id="28" parent="7" name="post_histories">
-      <ObjectId>24737</ObjectId>
-      <StateNumber>669</StateNumber>
+    <table id="30" parent="9" name="post_histories">
+      <ObjectId>25103</ObjectId>
+      <StateNumber>999</StateNumber>
     </table>
-    <table id="29" parent="7" name="posts">
-      <ObjectId>24726</ObjectId>
-      <StateNumber>670</StateNumber>
+    <table id="31" parent="9" name="posts">
+      <ObjectId>25092</ObjectId>
+      <StateNumber>3057</StateNumber>
     </table>
-    <table id="30" parent="7" name="schema_migrations">
-      <ObjectId>24626</ObjectId>
-      <StateNumber>658</StateNumber>
+    <table id="32" parent="9" name="schema_migrations">
+      <ObjectId>24992</ObjectId>
+      <StateNumber>988</StateNumber>
     </table>
-    <table id="31" parent="7" name="user_groups">
-      <ObjectId>24677</ObjectId>
-      <StateNumber>663</StateNumber>
+    <table id="33" parent="9" name="user_groups">
+      <ObjectId>25043</ObjectId>
+      <StateNumber>993</StateNumber>
     </table>
-    <table id="32" parent="7" name="user_roles">
-      <ObjectId>24704</ObjectId>
-      <StateNumber>666</StateNumber>
+    <table id="34" parent="9" name="user_roles">
+      <ObjectId>25070</ObjectId>
+      <StateNumber>996</StateNumber>
     </table>
-    <table id="33" parent="7" name="user_statuses">
-      <ObjectId>24693</ObjectId>
-      <StateNumber>665</StateNumber>
+    <table id="35" parent="9" name="user_statuses">
+      <ObjectId>25059</ObjectId>
+      <StateNumber>995</StateNumber>
     </table>
-    <table id="34" parent="7" name="users">
-      <ObjectId>24644</ObjectId>
-      <StateNumber>660</StateNumber>
+    <table id="36" parent="9" name="users">
+      <ObjectId>25010</ObjectId>
+      <StateNumber>3055</StateNumber>
     </table>
-    <column id="35" parent="23" name="key">
+    <column id="37" parent="25" name="key">
       <Position>1</Position>
       <DataType>varchar|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>659</StateNumber>
+      <StateNumber>989</StateNumber>
     </column>
-    <column id="36" parent="23" name="value">
+    <column id="38" parent="25" name="value">
       <Position>2</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>659</StateNumber>
+      <StateNumber>989</StateNumber>
     </column>
-    <column id="37" parent="23" name="created_at">
+    <column id="39" parent="25" name="created_at">
       <Position>3</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>659</StateNumber>
+      <StateNumber>989</StateNumber>
     </column>
-    <column id="38" parent="23" name="updated_at">
+    <column id="40" parent="25" name="updated_at">
       <Position>4</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>659</StateNumber>
+      <StateNumber>989</StateNumber>
     </column>
-    <index id="39" parent="23" name="ar_internal_metadata_pkey">
-      <ObjectId>24640</ObjectId>
+    <index id="41" parent="25" name="ar_internal_metadata_pkey">
+      <ObjectId>25006</ObjectId>
       <ColNames>key</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="40" parent="23" name="ar_internal_metadata_pkey">
-      <ObjectId>24641</ObjectId>
+    <key id="42" parent="25" name="ar_internal_metadata_pkey">
+      <ObjectId>25007</ObjectId>
       <ColNames>key</ColNames>
       <UnderlyingIndexName>ar_internal_metadata_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="41" parent="24" name="id">
+    <column id="43" parent="26" name="id">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>667</StateNumber>
+      <StateNumber>997</StateNumber>
       <SequenceName>boards_id_seq</SequenceName>
       <DefaultExpression>nextval(&apos;boards_id_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="42" parent="24" name="name">
+    <column id="44" parent="26" name="name">
       <Position>2</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>667</StateNumber>
+      <StateNumber>997</StateNumber>
     </column>
-    <column id="43" parent="24" name="date">
+    <column id="45" parent="26" name="date">
       <Position>3</Position>
       <DataType>timestamp|0</DataType>
-      <StateNumber>667</StateNumber>
+      <StateNumber>997</StateNumber>
     </column>
-    <column id="44" parent="24" name="channel_id">
+    <column id="46" parent="26" name="channel_id">
       <Position>4</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>667</StateNumber>
+      <StateNumber>997</StateNumber>
     </column>
-    <column id="45" parent="24" name="created_at">
+    <column id="47" parent="26" name="created_at">
       <Position>5</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>667</StateNumber>
+      <StateNumber>997</StateNumber>
     </column>
-    <column id="46" parent="24" name="updated_at">
+    <column id="48" parent="26" name="updated_at">
       <Position>6</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>667</StateNumber>
+      <StateNumber>997</StateNumber>
     </column>
-    <index id="47" parent="24" name="boards_pkey">
-      <ObjectId>24722</ObjectId>
+    <column id="49" parent="26" name="user_id">
+      <Position>7</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>3057</StateNumber>
+    </column>
+    <column id="50" parent="26" name="message">
+      <Position>8</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>3063</StateNumber>
+    </column>
+    <index id="51" parent="26" name="boards_pkey">
+      <ObjectId>25088</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="48" parent="24" name="boards_pkey">
-      <ObjectId>24723</ObjectId>
+    <key id="52" parent="26" name="boards_pkey">
+      <ObjectId>25089</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>boards_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="49" parent="25" name="id">
+    <column id="53" parent="27" name="id">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>664</StateNumber>
+      <StateNumber>994</StateNumber>
       <SequenceName>channel_groups_id_seq</SequenceName>
       <DefaultExpression>nextval(&apos;channel_groups_id_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="50" parent="25" name="group_id">
+    <column id="54" parent="27" name="group_id">
       <Position>2</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>664</StateNumber>
+      <StateNumber>994</StateNumber>
     </column>
-    <column id="51" parent="25" name="channel_id">
+    <column id="55" parent="27" name="channel_id">
       <Position>3</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>664</StateNumber>
+      <StateNumber>994</StateNumber>
     </column>
-    <column id="52" parent="25" name="date">
+    <column id="56" parent="27" name="date">
       <Position>4</Position>
       <DataType>timestamp|0</DataType>
-      <StateNumber>664</StateNumber>
+      <StateNumber>994</StateNumber>
     </column>
-    <column id="53" parent="25" name="created_at">
+    <column id="57" parent="27" name="created_at">
       <Position>5</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>664</StateNumber>
+      <StateNumber>994</StateNumber>
     </column>
-    <column id="54" parent="25" name="updated_at">
+    <column id="58" parent="27" name="updated_at">
       <Position>6</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>664</StateNumber>
+      <StateNumber>994</StateNumber>
     </column>
-    <index id="55" parent="25" name="channel_groups_pkey">
-      <ObjectId>24689</ObjectId>
+    <index id="59" parent="27" name="channel_groups_pkey">
+      <ObjectId>25055</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="56" parent="25" name="channel_groups_pkey">
-      <ObjectId>24690</ObjectId>
+    <key id="60" parent="27" name="channel_groups_pkey">
+      <ObjectId>25056</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>channel_groups_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="57" parent="26" name="id">
+    <column id="61" parent="28" name="id">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>662</StateNumber>
+      <StateNumber>992</StateNumber>
       <SequenceName>channels_id_seq</SequenceName>
       <DefaultExpression>nextval(&apos;channels_id_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="58" parent="26" name="name">
+    <column id="62" parent="28" name="name">
       <Position>2</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>662</StateNumber>
+      <StateNumber>992</StateNumber>
     </column>
-    <column id="59" parent="26" name="date">
+    <column id="63" parent="28" name="date">
       <Position>3</Position>
       <DataType>timestamp|0</DataType>
-      <StateNumber>662</StateNumber>
+      <StateNumber>992</StateNumber>
     </column>
-    <column id="60" parent="26" name="created_at">
+    <column id="64" parent="28" name="created_at">
       <Position>4</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>662</StateNumber>
+      <StateNumber>992</StateNumber>
     </column>
-    <column id="61" parent="26" name="updated_at">
+    <column id="65" parent="28" name="updated_at">
       <Position>5</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>662</StateNumber>
+      <StateNumber>992</StateNumber>
     </column>
-    <index id="62" parent="26" name="channels_pkey">
-      <ObjectId>24673</ObjectId>
+    <index id="66" parent="28" name="channels_pkey">
+      <ObjectId>25039</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="63" parent="26" name="channels_pkey">
-      <ObjectId>24674</ObjectId>
+    <key id="67" parent="28" name="channels_pkey">
+      <ObjectId>25040</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>channels_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="64" parent="27" name="id">
+    <column id="68" parent="29" name="id">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>661</StateNumber>
+      <StateNumber>991</StateNumber>
       <SequenceName>groups_id_seq</SequenceName>
       <DefaultExpression>nextval(&apos;groups_id_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="65" parent="27" name="name">
+    <column id="69" parent="29" name="name">
       <Position>2</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>661</StateNumber>
+      <StateNumber>991</StateNumber>
     </column>
-    <column id="66" parent="27" name="created_at">
+    <column id="70" parent="29" name="created_at">
       <Position>3</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>661</StateNumber>
+      <StateNumber>991</StateNumber>
     </column>
-    <column id="67" parent="27" name="updated_at">
+    <column id="71" parent="29" name="updated_at">
       <Position>4</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>661</StateNumber>
+      <StateNumber>991</StateNumber>
     </column>
-    <index id="68" parent="27" name="groups_pkey">
-      <ObjectId>24662</ObjectId>
+    <index id="72" parent="29" name="groups_pkey">
+      <ObjectId>25028</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="69" parent="27" name="groups_pkey">
-      <ObjectId>24663</ObjectId>
+    <key id="73" parent="29" name="groups_pkey">
+      <ObjectId>25029</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>groups_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="70" parent="28" name="id">
+    <column id="74" parent="30" name="id">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>669</StateNumber>
+      <StateNumber>999</StateNumber>
       <SequenceName>post_histories_id_seq</SequenceName>
       <DefaultExpression>nextval(&apos;post_histories_id_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="71" parent="28" name="action">
+    <column id="75" parent="30" name="action">
       <Position>2</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>669</StateNumber>
+      <StateNumber>999</StateNumber>
     </column>
-    <column id="72" parent="28" name="date">
+    <column id="76" parent="30" name="date">
       <Position>3</Position>
       <DataType>timestamp|0</DataType>
-      <StateNumber>669</StateNumber>
+      <StateNumber>999</StateNumber>
     </column>
-    <column id="73" parent="28" name="user_id">
+    <column id="77" parent="30" name="user_id">
       <Position>4</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>669</StateNumber>
+      <StateNumber>999</StateNumber>
     </column>
-    <column id="74" parent="28" name="post_id">
+    <column id="78" parent="30" name="post_id">
       <Position>5</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>669</StateNumber>
+      <StateNumber>999</StateNumber>
     </column>
-    <column id="75" parent="28" name="created_at">
+    <column id="79" parent="30" name="created_at">
       <Position>6</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>669</StateNumber>
+      <StateNumber>999</StateNumber>
     </column>
-    <column id="76" parent="28" name="updated_at">
+    <column id="80" parent="30" name="updated_at">
       <Position>7</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>669</StateNumber>
+      <StateNumber>999</StateNumber>
     </column>
-    <index id="77" parent="28" name="post_histories_pkey">
-      <ObjectId>24744</ObjectId>
+    <index id="81" parent="30" name="post_histories_pkey">
+      <ObjectId>25110</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="78" parent="28" name="post_histories_pkey">
-      <ObjectId>24745</ObjectId>
+    <key id="82" parent="30" name="post_histories_pkey">
+      <ObjectId>25111</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>post_histories_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="79" parent="29" name="id">
+    <column id="83" parent="31" name="id">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>668</StateNumber>
+      <StateNumber>998</StateNumber>
       <SequenceName>posts_id_seq</SequenceName>
       <DefaultExpression>nextval(&apos;posts_id_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="80" parent="29" name="name">
+    <column id="84" parent="31" name="name">
       <Position>2</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>668</StateNumber>
+      <StateNumber>998</StateNumber>
     </column>
-    <column id="81" parent="29" name="date">
+    <column id="85" parent="31" name="date">
       <Position>3</Position>
       <DataType>timestamp|0</DataType>
-      <StateNumber>668</StateNumber>
+      <StateNumber>998</StateNumber>
     </column>
-    <column id="82" parent="29" name="board_id">
+    <column id="86" parent="31" name="board_id">
       <Position>4</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>668</StateNumber>
+      <StateNumber>998</StateNumber>
     </column>
-    <column id="83" parent="29" name="created_at">
+    <column id="87" parent="31" name="created_at">
       <Position>5</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>668</StateNumber>
+      <StateNumber>998</StateNumber>
     </column>
-    <column id="84" parent="29" name="updated_at">
+    <column id="88" parent="31" name="updated_at">
       <Position>6</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>668</StateNumber>
+      <StateNumber>998</StateNumber>
     </column>
-    <column id="85" parent="29" name="message">
+    <column id="89" parent="31" name="message">
       <Position>7</Position>
       <DataType>text|0</DataType>
-      <StateNumber>670</StateNumber>
+      <StateNumber>1000</StateNumber>
     </column>
-    <index id="86" parent="29" name="posts_pkey">
-      <ObjectId>24733</ObjectId>
+    <column id="90" parent="31" name="user_id">
+      <Position>8</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>3057</StateNumber>
+    </column>
+    <index id="91" parent="31" name="posts_pkey">
+      <ObjectId>25099</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="87" parent="29" name="posts_pkey">
-      <ObjectId>24734</ObjectId>
+    <key id="92" parent="31" name="posts_pkey">
+      <ObjectId>25100</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>posts_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="88" parent="30" name="version">
+    <column id="93" parent="32" name="version">
       <Position>1</Position>
       <DataType>varchar|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>658</StateNumber>
+      <StateNumber>988</StateNumber>
     </column>
-    <index id="89" parent="30" name="schema_migrations_pkey">
-      <ObjectId>24632</ObjectId>
+    <index id="94" parent="32" name="schema_migrations_pkey">
+      <ObjectId>24998</ObjectId>
       <ColNames>version</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="90" parent="30" name="schema_migrations_pkey">
-      <ObjectId>24633</ObjectId>
+    <key id="95" parent="32" name="schema_migrations_pkey">
+      <ObjectId>24999</ObjectId>
       <ColNames>version</ColNames>
       <UnderlyingIndexName>schema_migrations_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="91" parent="31" name="id">
+    <column id="96" parent="33" name="id">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>663</StateNumber>
+      <StateNumber>993</StateNumber>
       <SequenceName>user_groups_id_seq</SequenceName>
       <DefaultExpression>nextval(&apos;user_groups_id_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="92" parent="31" name="user_id">
+    <column id="97" parent="33" name="user_id">
       <Position>2</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>663</StateNumber>
+      <StateNumber>993</StateNumber>
     </column>
-    <column id="93" parent="31" name="group_id">
+    <column id="98" parent="33" name="group_id">
       <Position>3</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>663</StateNumber>
+      <StateNumber>993</StateNumber>
     </column>
-    <column id="94" parent="31" name="created_at">
+    <column id="99" parent="33" name="created_at">
       <Position>4</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>663</StateNumber>
+      <StateNumber>993</StateNumber>
     </column>
-    <column id="95" parent="31" name="updated_at">
+    <column id="100" parent="33" name="updated_at">
       <Position>5</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>663</StateNumber>
+      <StateNumber>993</StateNumber>
     </column>
-    <index id="96" parent="31" name="user_groups_pkey">
-      <ObjectId>24681</ObjectId>
+    <index id="101" parent="33" name="user_groups_pkey">
+      <ObjectId>25047</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="97" parent="31" name="user_groups_pkey">
-      <ObjectId>24682</ObjectId>
+    <key id="102" parent="33" name="user_groups_pkey">
+      <ObjectId>25048</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>user_groups_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="98" parent="32" name="id">
+    <column id="103" parent="34" name="id">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>666</StateNumber>
+      <StateNumber>996</StateNumber>
       <SequenceName>user_roles_id_seq</SequenceName>
       <DefaultExpression>nextval(&apos;user_roles_id_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="99" parent="32" name="user_id">
+    <column id="104" parent="34" name="user_id">
       <Position>2</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>666</StateNumber>
+      <StateNumber>996</StateNumber>
     </column>
-    <column id="100" parent="32" name="role_description">
+    <column id="105" parent="34" name="role_description">
       <Position>3</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>671</StateNumber>
+      <StateNumber>1001</StateNumber>
     </column>
-    <column id="101" parent="32" name="created_at">
+    <column id="106" parent="34" name="created_at">
       <Position>4</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>666</StateNumber>
+      <StateNumber>996</StateNumber>
     </column>
-    <column id="102" parent="32" name="updated_at">
+    <column id="107" parent="34" name="updated_at">
       <Position>5</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>666</StateNumber>
+      <StateNumber>996</StateNumber>
     </column>
-    <index id="103" parent="32" name="user_roles_pkey">
-      <ObjectId>24711</ObjectId>
+    <index id="108" parent="34" name="user_roles_pkey">
+      <ObjectId>25077</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="104" parent="32" name="user_roles_pkey">
-      <ObjectId>24712</ObjectId>
+    <key id="109" parent="34" name="user_roles_pkey">
+      <ObjectId>25078</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>user_roles_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="105" parent="33" name="id">
+    <column id="110" parent="35" name="id">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>665</StateNumber>
+      <StateNumber>995</StateNumber>
       <SequenceName>user_statuses_id_seq</SequenceName>
       <DefaultExpression>nextval(&apos;user_statuses_id_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="106" parent="33" name="user_id">
+    <column id="111" parent="35" name="user_id">
       <Position>2</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>665</StateNumber>
+      <StateNumber>995</StateNumber>
     </column>
-    <column id="107" parent="33" name="status_description">
+    <column id="112" parent="35" name="status_description">
       <Position>3</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>665</StateNumber>
+      <StateNumber>995</StateNumber>
     </column>
-    <column id="108" parent="33" name="created_at">
+    <column id="113" parent="35" name="created_at">
       <Position>4</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>665</StateNumber>
+      <StateNumber>995</StateNumber>
     </column>
-    <column id="109" parent="33" name="updated_at">
+    <column id="114" parent="35" name="updated_at">
       <Position>5</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>665</StateNumber>
+      <StateNumber>995</StateNumber>
     </column>
-    <index id="110" parent="33" name="user_statuses_pkey">
-      <ObjectId>24700</ObjectId>
+    <index id="115" parent="35" name="user_statuses_pkey">
+      <ObjectId>25066</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="111" parent="33" name="user_statuses_pkey">
-      <ObjectId>24701</ObjectId>
+    <key id="116" parent="35" name="user_statuses_pkey">
+      <ObjectId>25067</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>user_statuses_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="112" parent="34" name="id">
+    <column id="117" parent="36" name="id">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>660</StateNumber>
+      <StateNumber>990</StateNumber>
       <SequenceName>users_id_seq</SequenceName>
       <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="113" parent="34" name="fname">
+    <column id="118" parent="36" name="fname">
       <Position>2</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>660</StateNumber>
+      <StateNumber>990</StateNumber>
     </column>
-    <column id="114" parent="34" name="lname">
+    <column id="119" parent="36" name="lname">
       <Position>3</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>660</StateNumber>
+      <StateNumber>990</StateNumber>
     </column>
-    <column id="115" parent="34" name="username">
+    <column id="120" parent="36" name="username">
       <Position>4</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>660</StateNumber>
+      <StateNumber>990</StateNumber>
     </column>
-    <column id="116" parent="34" name="password_digest">
+    <column id="121" parent="36" name="password_digest">
       <Position>5</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>672</StateNumber>
+      <StateNumber>1002</StateNumber>
     </column>
-    <column id="117" parent="34" name="created_at">
+    <column id="122" parent="36" name="created_at">
       <Position>6</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>660</StateNumber>
+      <StateNumber>990</StateNumber>
     </column>
-    <column id="118" parent="34" name="updated_at">
+    <column id="123" parent="36" name="updated_at">
       <Position>7</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>660</StateNumber>
+      <StateNumber>990</StateNumber>
     </column>
-    <index id="119" parent="34" name="users_pkey">
-      <ObjectId>24651</ObjectId>
+    <column id="124" parent="36" name="role">
+      <Position>8</Position>
+      <DataType>varchar|0</DataType>
+      <StateNumber>3062</StateNumber>
+    </column>
+    <index id="125" parent="36" name="users_pkey">
+      <ObjectId>25017</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="120" parent="34" name="users_pkey">
-      <ObjectId>24652</ObjectId>
+    <key id="126" parent="36" name="users_pkey">
+      <ObjectId>25018</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
