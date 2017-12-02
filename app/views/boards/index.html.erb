@@ -11,6 +11,7 @@
   <thead>
     <tr>
       <th>Board</th>
+      <th>Message</th>
       <th>Posts</th>
       <th>Date</th>
       <th>Channel</th>
@@ -23,6 +24,7 @@
     <% @boards.each do |board| %>
       <tr>
         <td><%= board.name %></td>
+        <td><%= board.message%></td>
         <td><%= board.posts.count %> </td>
         <td><%= board.created_at.in_time_zone("Central Time (US & Canada)").strftime("%Y-%m-%d at %H:%M") %></td>
         <td><%= board.channel.name %></td>
