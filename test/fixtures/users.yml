@@ -1,13 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  fname: MyString
-  lname: MyString
-  username: MyString
-  password: MyString
+  fname: William
+  lname: Hung
+  username: william
+  password_digest: password
+  role: manager
 
 two:
-  fname: MyString
-  lname: MyString
-  username: MyString
-  password: MyString
+  fname: Julius
+  lname: Angelica
+  username: jayjay
+  password_digest: password
+  role: manager

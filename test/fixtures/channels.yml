@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
+  name: channel1
   date: 2017-10-25 22:03:02
 
 two:
-  name: MyString
+  name: channel2
   date: 2017-10-25 22:03:02
