@@ -7,7 +7,7 @@
 
 <p>
   <strong>Date:</strong>
-  <%= @board.date %>
+  <%= @board.created_at %>
 </p>
 
 <p>
@@ -15,5 +15,10 @@
   <%= @board.channel.name %>
 </p>
 
+<p>
+  <strong>Message:</strong>
+  <%= @board.message %>
+</p>
+
 <%= link_to 'Edit', edit_board_path(@board) %> |
-<%= link_to 'Back', boards_path %>
+<%= link_to 'Back', boards_path %> |
