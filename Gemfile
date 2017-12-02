@@ -34,7 +34,8 @@ gem 'bcrypt', '~> 3.1.11', git: 'https://github.com/codahale/bcrypt-ruby.git', :
 gem 'bootstrap-sass', '3.3.7'
 gem 'jquery-rails'
 gem 'cancancan', '~> 2.0'
-
+gem 'chartkick'
+gem 'groupdate'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -53,4 +54,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'chartkick'
