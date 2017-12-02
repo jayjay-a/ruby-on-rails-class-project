@@ -34,18 +34,18 @@ Channel.create({"name"=>"Helpdesk"})
 
 #Board.create!({"name"=>"J.U.L.I.U.S.","user_id"=>"1","channel_id"=>"1","created_at"=>"2017-12-01 at 00:00"})
 board_list = [
-    {name: 'J.U.L.I.U.S.',user_id:1,channel_id: 1,created_at: '2017-12-01 at 00:00'},
-    {name: 'Project N M A Dungeon', user_id:2 ,channel_id: 1,created_at: '2017-12-01 at 00:00'},
-    {name: 'Phoenix', user_id:3 ,channel_id: 2,created_at: '2017-12-02 at 00:00'},
-    {name: 'Migrations', user_id:4 ,channel_id: 2,created_at: '2017-12-02 at 00:00'},
-    {name: 'Q2 Promotional Items', user_id:5 ,channel_id: 3,created_at: '2017-12-02 at 00:00'},
-    {name: 'Novelty Inventory', user_id:2 ,channel_id: 3,created_at: '2017-12-03 at 00:00'},
-    {name: 'Margin Megathread', user_id:5 ,channel_id: 3,created_at: '2017-12-03 at 00:00'},
+    {name: 'J.U.L.I.U.S.',user_id:1,channel_id:1,created_at: '2017-12-01 at 00:00'},
+    {name: 'Project N M A Dungeon', user_id:2 ,channel_id:2,created_at: '2017-12-01 at 00:00'},
+    {name: 'Phoenix', user_id:3 ,channel_id: 1,created_at: '2017-12-02 at 00:00'},
+    {name: 'Migrations', user_id:4 ,channel_id: 3,created_at: '2017-12-02 at 00:00'},
+    {name: 'Q2 Promotional Items', user_id:5 ,channel_id: 4,created_at: '2017-12-02 at 00:00'},
+    {name: 'Novelty Inventory', user_id:2 ,channel_id: 1,created_at: '2017-12-03 at 00:00'},
+    {name: 'Margin Megathread', user_id:5 ,channel_id: 2,created_at: '2017-12-03 at 00:00'},
     {name: 'CoT Grillfest', user_id:4 ,channel_id: 4,created_at: '2017-12-03 at 00:00'},
-    {name: 'Ruby Problems', user_id:3 ,channel_id: 5,created_at: '2017-12-04 at 00:00'},
-    {name: 'Rail Problems', user_id:2 ,channel_id: 5,created_at: '2017-12-05 at 00:00'},
+    {name: 'Ruby Problems', user_id:3 ,channel_id: 3,created_at: '2017-12-04 at 00:00'},
+    {name: 'Rail Problems', user_id:2 ,channel_id: 3,created_at: '2017-12-05 at 00:00'},
     {name: 'PSA: Try turning it on and off again', user_id:1 ,channel_id: 5,created_at: '2017-12-05 at 00:00'},
-    {name: 'Campus Recruiting at UH', user_id:1 ,channel_id: 4,created_at: '2017-12-0505 at 00:00'}
+    {name: 'Campus Recruiting at UH', user_id:1 ,channel_id: 3,created_at: '2017-12-05 at 00:00'}
 ]
 board_list.each do |board|
   Board.create board
