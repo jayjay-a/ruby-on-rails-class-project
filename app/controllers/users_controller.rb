@@ -41,7 +41,7 @@ class UsersController < ApplicationController
     @user.role = 'user'
     respond_to do |format|
       if @user.save
-        format.html { redirect_to root_url, success: 'User was successfully created.' }
+        format.html { redirect_to root_url, flash: {success: 'User was successfully created.'} }
         format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new }
