@@ -53,7 +53,7 @@ class ChannelsController < ApplicationController
     authorize! :update, @channel
     respond_to do |format|
       if @channel.update(channel_params)
-        format.html { redirect_to @channel, flash: { success: 'Channel was successfully updated.' }}
+        format.html { redirect_to @channel, flash: { info: 'Channel was successfully updated.' }}
         format.json { render :show, status: :ok, location: @channel }
       else
         format.html { render :edit }

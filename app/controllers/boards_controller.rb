@@ -60,7 +60,7 @@ class BoardsController < ApplicationController
     authorize! :update, @board
     respond_to do |format|
       if @board.update(board_params)
-        format.html { redirect_to @board, flash: { success: 'Board was successfully updated.' }}
+        format.html { redirect_to @board, flash: { info: 'Board was successfully updated.' }}
         format.json { render :show, status: :ok, location: @board }
       else
         format.html { render :edit }

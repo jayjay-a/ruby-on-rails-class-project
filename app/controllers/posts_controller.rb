@@ -57,7 +57,7 @@ class PostsController < ApplicationController
     authorize! :update, @post
     respond_to do |format|
       if @post.update(post_params)
-        format.html { redirect_to @post, flash: { success: 'Post was successfully updated.' }}
+        format.html { redirect_to @post, flash: { info: 'Post was successfully updated.' }}
         format.json { render :show, status: :ok, location: @post }
       else
         format.html { render :edit }
