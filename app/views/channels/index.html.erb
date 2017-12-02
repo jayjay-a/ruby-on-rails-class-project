@@ -20,7 +20,7 @@
   <tbody>
     <% @channels.each do |channel| %>
       <tr>
-        <td><%= channel.name %></td>
+        <td><%= link_to channel.name, boards_url(:channel_id => channel.id)%></td>
         <td><%= channel.boards.count %> </td>
         <td><%#= channel.date %></td>
         <% if can? :manage, channel%>
