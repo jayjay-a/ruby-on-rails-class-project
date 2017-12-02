@@ -23,6 +23,9 @@ class Ability
         can :destroy, Post do |post|
           post.user == user
         end
+        can :update, User do |user|
+          user.username == user.username
+        end
       elsif user.role == nil
         can :read, [Board, Channel, Post]
         can :create, User

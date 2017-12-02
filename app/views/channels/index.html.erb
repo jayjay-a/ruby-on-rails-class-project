@@ -23,7 +23,9 @@
         <td><%= channel.name %></td>
         <td><%= channel.boards.count %> </td>
         <td><%#= channel.date %></td>
+        <% if can? :manage, channel%>
         <td><%= link_to 'Show', channel %></td>
+        <% end %>
         <% if can? :update, channel%>
         <td><%= link_to 'Edit', edit_channel_path(channel) %></td>
         <% end %>

@@ -19,6 +19,7 @@ class ChannelsController < ApplicationController
   # GET /channels/1
   # GET /channels/1.json
   def show
+    authorize! :manage, @channel
   end
 
   # GET /channels/new
