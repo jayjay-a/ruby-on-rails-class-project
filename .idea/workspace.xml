@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69015427-4059-4d23-8221-ed585593157b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMLDiagrams/UMLActivityViewingPost.jpg" afterPath="$PROJECT_DIR$/UMLDiagrams/UMLActivityViewingPost.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -197,7 +196,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1912" />
     <option name="y" value="28" />
     <option name="width" value="1696" />
@@ -657,12 +656,12 @@
       <workItem from="1511727269777" duration="35000" />
       <workItem from="1511727316624" duration="11553000" />
       <workItem from="1512014584350" duration="160000" />
-      <workItem from="1512154291201" duration="17661000" />
+      <workItem from="1512154291201" duration="18102000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54997000" />
+    <option name="totallyTimeSpent" value="55438000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -674,7 +673,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="28" width="1696" height="1026" extended-state="7" />
+    <frame x="1912" y="28" width="1696" height="1026" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988802" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
