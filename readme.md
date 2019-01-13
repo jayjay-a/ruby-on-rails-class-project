@@ -1,11 +1,3 @@
-# Semester-Project
+simple forum built on ruby on rules
 
-### Team Members
-Julius Agno  
-William Ashby  
-Katie Trujillo  
-Alex Tjon
-
----
-### To do
-- Everything
+project for intro class
